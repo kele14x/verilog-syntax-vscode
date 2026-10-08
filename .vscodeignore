@@ -1,0 +1,6 @@
+**/*
+!package.json
+!THIRD_PARTY_NOTICES.txt
+!syntaxes/
+!syntaxes/*.tmLanguage.json
+!syntaxes/upstream.json

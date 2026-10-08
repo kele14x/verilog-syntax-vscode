@@ -1,0 +1,58 @@
+{
+  "name": "verilog-syntax",
+  "displayName": "Verilog / SystemVerilog Syntax",
+  "description": "Syntax highlighting only for Verilog and SystemVerilog. No language server or external tools.",
+  "version": "0.1.0",
+  "publisher": "kele14x",
+  "private": true,
+  "license": "SEE LICENSE IN THIRD_PARTY_NOTICES.txt",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "keywords": [
+    "verilog",
+    "systemverilog",
+    "syntax highlighting",
+    "rtl"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "verilog",
+        "aliases": ["Verilog", "verilog"],
+        "extensions": [".v", ".vh", ".vl"]
+      },
+      {
+        "id": "systemverilog",
+        "aliases": ["SystemVerilog", "System Verilog", "systemverilog"],
+        "extensions": [".sv", ".svh", ".SV"]
+      }
+    ],
+    "grammars": [
+      {
+        "language": "verilog",
+        "scopeName": "source.verilog",
+        "path": "./syntaxes/verilog.tmLanguage.json"
+      },
+      {
+        "language": "systemverilog",
+        "scopeName": "source.systemverilog",
+        "path": "./syntaxes/systemverilog.tmLanguage.json"
+      }
+    ]
+  },
+  "scripts": {
+    "test": "node --test test/*.test.cjs",
+    "package": "npm test && vsce package --no-dependencies --allow-missing-repository",
+    "preview": "vscode-test-web --browser none --quality stable --host localhost --port 9321 --extensionDevelopmentPath . examples"
+  },
+  "devDependencies": {
+    "@vscode/test-web": "0.0.81",
+    "@vscode/vsce": "4.0.0",
+    "vscode-oniguruma": "2.0.1",
+    "vscode-textmate": "9.3.2"
+  }
+}

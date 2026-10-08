@@ -1,0 +1,19 @@
+{
+  "repository": "https://github.com/mshr-h/vscode-verilog-hdl-support",
+  "commit": "53484f7c5bc6313cf648955d050dbffcd3fe6855",
+  "files": [
+    {
+      "path": "syntaxes/verilog.tmLanguage.json",
+      "upstreamSha256": "3845f1f2c02728057f942f57d9caf67cd9371f78825a9396263e5186279d1176",
+      "sha256": "3845f1f2c02728057f942f57d9caf67cd9371f78825a9396263e5186279d1176"
+    },
+    {
+      "path": "syntaxes/systemverilog.tmLanguage.json",
+      "upstreamSha256": "c27624043627d022691dc15a1f61d481476a4c74975edb6ea5469d665d6ff1d1",
+      "sha256": "cbd5b20d431309222ac413f4131f70628c42e21b93770fe9bfec2d8807dc9855",
+      "changes": [
+        "Recognize unlabelled assert, assume, cover, and restrict as control keywords before module-instantiation matching."
+      ]
+    }
+  ]
+}
