@@ -6,6 +6,10 @@
   "publisher": "kele14x",
   "private": true,
   "license": "SEE LICENSE IN THIRD_PARTY_NOTICES.txt",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kele14x/verilog-syntax-vscode.git"
+  },
   "engines": {
     "vscode": "^1.75.0"
   },
