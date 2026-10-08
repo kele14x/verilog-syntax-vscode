@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "publisher": "kele14x",
   "private": true,
-  "license": "SEE LICENSE IN THIRD_PARTY_NOTICES.txt",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/kele14x/verilog-syntax-vscode.git"

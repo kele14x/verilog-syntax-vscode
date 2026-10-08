@@ -61,7 +61,9 @@ GitHub Actions runs tests for pushes to `main`, pull requests, and version tags.
 
 The workflow does not publish to the VS Code Marketplace.
 
-## Grammar sources and licenses
+## License and grammar sources
+
+Original project code is licensed under the [MIT License](LICENSE). Vendored grammars retain their respective licenses and copyright notices.
 
 The grammars are vendored from [mshr-h/vscode-verilog-hdl-support](https://github.com/mshr-h/vscode-verilog-hdl-support) at commit `53484f7c5bc6313cf648955d050dbffcd3fe6855`. Their origins include [VSCode-SystemVerilog](https://github.com/eirikpre/VSCode-SystemVerilog) and the [TextMate Verilog Bundle](https://github.com/textmate/verilog.tmbundle).
 
