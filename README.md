@@ -17,6 +17,16 @@ Requires VS Code 1.75.0 or later. Highlighting colors depend on your active them
 
 ## Installation
 
+Install [Verilog / SystemVerilog Syntax from the VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=kele14x.verilog-syntax), or search for `kele14x.verilog-syntax` in the VS Code Extensions view.
+
+From a terminal, run:
+
+```sh
+code --install-extension kele14x.verilog-syntax
+```
+
+### Install from a VSIX
+
 Build a VSIX locally using the development instructions below, or download one from this repository's GitHub Releases when a release is available.
 
 In VS Code, open the Command Palette, select **Extensions: Install from VSIX...**, and choose the `.vsix` file. Alternatively, install a locally built package from a terminal:
