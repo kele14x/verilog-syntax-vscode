@@ -1,11 +1,19 @@
 {
   "name": "verilog-syntax",
   "displayName": "Verilog / SystemVerilog Syntax",
-  "description": "Syntax highlighting only for Verilog and SystemVerilog. No language server or external tools.",
-  "version": "0.1.0",
+  "description": "Lightweight Verilog and SystemVerilog syntax highlighting, including assertions, with no language server or external tools.",
+  "version": "0.1.1",
   "publisher": "kele14x",
   "private": true,
   "license": "MIT",
+  "author": {
+    "name": "Michiru Morishita",
+    "url": "https://github.com/kele14x"
+  },
+  "homepage": "https://github.com/kele14x/verilog-syntax-vscode#readme",
+  "bugs": {
+    "url": "https://github.com/kele14x/verilog-syntax-vscode/issues"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/kele14x/verilog-syntax-vscode.git"
@@ -20,7 +28,9 @@
     "verilog",
     "systemverilog",
     "syntax highlighting",
-    "rtl"
+    "rtl",
+    "hdl",
+    "fpga"
   ],
   "contributes": {
     "languages": [
@@ -50,7 +60,9 @@
   },
   "scripts": {
     "test": "node --test test/*.test.cjs",
-    "package": "npm test && vsce package --no-dependencies --allow-missing-repository",
+    "vscode:prepublish": "npm test",
+    "package": "vsce package --no-dependencies",
+    "publish:marketplace": "vsce publish --no-dependencies",
     "preview": "vscode-test-web --browser none --quality stable --host localhost --port 9321 --extensionDevelopmentPath . examples"
   },
   "devDependencies": {
